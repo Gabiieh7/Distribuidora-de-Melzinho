@@ -1,0 +1,86 @@
+.header .nav input {
+    display: none;
+}
+
+.header .nav label .menu {
+    display: none;
+    width: 6rem;
+    height: 6rem;
+}
+.header .nav label .menu .hamburguer {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 1.6px;
+    top: 3rem;
+    left: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.header .nav label .menu .hamburguer::before,
+.header .nav label .menu .hamburguer::after {
+    background-color: #fff;
+    color: #fff;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header .nav label .menu .hamburguer::before {
+    top: -1rem;
+}
+
+.header .nav label .menu .hamburguer::after {
+    bottom: -1rem;
+}
+.header .nav input:checked ~ label .menu .hamburguer{
+    transform: rotate(45deg);
+}
+.header .nav input:checked ~ label .menu .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+.header .nav input:checked ~ label .menu .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
+@media (max-width:1000px) {
+    .header .nav label .menu{
+        display: block;
+        position: absolute;
+        top: -5.5rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    .header .nav .list-nav {
+        display: none;
+        width: 30rem;
+        background-color: rgb(10, 10, 10);
+        padding: 1rem 2.5rem;
+        border-bottom-left-radius: 7px;
+    }
+
+    .header .nav input:checked ~ .list-nav{
+        display: block; 
+    }
+    .header .nav{
+        position: absolute;
+        top: 5.3rem;
+        right: 0;
+    }
+    
+    .header .nav .list-nav .link-nav a{
+        font-size: 2rem;
+        margin: 2.5rem 0;
+        text-align: center;
+        display: block;
+    }
+    
+}

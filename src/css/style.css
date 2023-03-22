@@ -1,0 +1,618 @@
+html {
+    font-family: 'Lora', sans-serif;
+}
+
+/* ---header--- */
+
+.header {
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.5rem;
+}
+
+.header .div-logo .logo {
+    width: 4rem;
+}
+
+.header .nav {
+    display: flex;
+}
+
+.header .nav .list-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 3rem;
+}
+
+.header .nav .list-nav .link-nav a {
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 0.7rem 1.5rem;
+    transition: 0.7s ease-in-out;
+}
+
+.header .nav .list-nav .link-nav a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 2rem;
+}
+
+/* ---home--- */
+
+.div-home {
+    background: url(../images/fundo1.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 9rem 0;
+    overflow-y: hidden;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.div-home::before {
+    content: "";
+    background: radial-gradient(circle, rgba(42, 42, 42, 0.49352240896358546) 0%, rgba(42, 42, 42, 0.5663515406162465) 22%, rgba(0, 0, 0, 0.9080882352941176) 97%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.div-home .div-img-home {
+    width: 45%;
+    text-align: center;
+    z-index: 2;
+}
+
+.div-home .div-img-home .vital-honey {
+    width: 65%;
+    filter: drop-shadow(-1.1rem 1.6rem 0.8rem rgb(23, 20, 20));
+}
+
+.div-home .div-text-home {
+    max-width: 65%;
+    padding: 4rem;
+    z-index: 2;
+}
+
+.div-home .div-text-home .capition-description {
+    font-size: 4.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.div-home .div-text-home .text-description {
+    font-size: 2.7rem;
+    color: #fff;
+    margin: 1.5rem;
+    line-height: 4.2rem;
+}
+
+.div-home .div-text-home .text-description span {
+    text-decoration: underline;
+}
+
+/* ---about--- */
+
+.div-about {
+    display: flex;
+    border: 0.2rem solid #000;
+}
+
+.div-about .div-about-texts {
+    padding: 4rem;
+        width: 50%;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+}
+
+.div-about .div-about-texts .capition-about {
+    font-size: 3.3rem;
+    text-align: center;
+    text-shadow: -0.3rem 0.15rem 0.8rem rgb(188, 188, 188);
+    margin: 2rem 0 4rem;
+}
+
+.div-about .div-about-texts .text-about {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 0 3rem;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+.div-about .div-about-imgs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+
+.div-about .div-about-imgs .capition-composition {
+    color: #fff;
+    font-size: 3.3rem;
+    text-shadow: -0.3rem 0.15rem 0.8rem rgb(188, 188, 188);
+}
+
+.div-about .div-about-imgs .container {
+    display: flex;
+    align-items: center;
+}
+
+.div-about .div-about-imgs .container .list-itens {
+    width: 60rem;
+    padding: 22.5rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-about .div-about-imgs .container .list-itens .iten {
+    position: absolute;
+    width: 85%;
+    opacity: 0;
+    margin: 1.5rem 2.5rem;
+}
+
+.div-about .div-about-imgs .container .list-itens .iten.select {
+    opacity: 1;
+}
+
+.div-about .div-about-imgs .container .list-itens .iten .img-iten {
+    width: 100%;
+    height: 25rem;
+}
+
+.div-about .div-about-imgs .container .list-itens .iten .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    color: rgba(255, 255, 255, 0.847);
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+.div-about .div-about-imgs .btn {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-about .div-about-imgs .btn:hover {
+    color: rgb(166, 164, 164);
+    opacity: 0.7;
+}
+
+/* ---buy--- */
+
+.div-buy {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8rem 0;
+    background-color: rgba(208, 208, 208, 0.303);
+}
+
+.div-buy .imgs-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 35%;
+}
+
+.div-buy .imgs-buy .list-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-buy .imgs-buy .list-imgs .img {
+    position: absolute;
+    width: 70%;
+    display: none;
+}
+
+.div-buy .imgs-buy .list-imgs .img.selecionado {
+    display: block;
+}
+
+.div-buy .imgs-buy .list-imgs .img .vital-honey {
+    width: 100%;
+}
+
+.div-buy .imgs-buy .btn {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 3.5rem;
+}
+
+.div-buy .imgs-buy .btn:hover {
+    transform: scale(1.3);
+}
+
+.div-buy .imgs-buy .btn .seta {
+    filter: invert();
+    width: 100%;
+}
+
+.div-buy .div-info-buy {
+    max-width: 52%;
+}
+
+.div-buy .div-info-buy .title {
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+}
+
+.div-buy .div-info-buy table {
+    width: 60%;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 5rem 5rem 5rem 6rem;
+    border-collapse: collapse;
+    background-color: rgb(245, 245, 245);
+}
+
+.div-buy .div-info-buy table th {
+    background-color: rgba(58, 57, 57, 0.496);
+    width: 25%;
+    border: 2px solid black;
+}
+
+.div-buy .div-info-buy table tr {
+    height: 4rem;
+}
+
+.div-buy .div-info-buy table td {
+    border: 2px solid black;
+}
+
+.div-buy .div-info-buy .div-amount-buy {
+    display: flex;
+}
+
+.div-buy .div-info-buy .div-amount-buy .amount {
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.div-buy .div-info-buy .div-amount-buy .amount input {
+    padding: 1.3rem 0;
+    width: 7rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    font-size: 1.8rem;
+}
+
+
+.div-buy .div-info-buy .div-amount-buy .amount span {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.div-buy .div-info-buy .div-amount-buy .amount .less {
+    left: 1rem;
+    font-size: 2.2rem;
+}
+
+.div-buy .div-info-buy .div-amount-buy .amount .more {
+    right: 1rem;
+    font-size: 1.8rem;
+    margin-top: 1.5px;
+}
+
+.div-buy .div-info-buy .div-amount-buy select {
+    width: 20%;
+    margin-left: 3.5rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+
+.div-buy .div-info-buy .div-amount-buy .radio {
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    font-size: 2.2rem;
+}
+
+.div-buy .div-info-buy .div-amount-buy .radio input {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.div-buy .div-info-buy .div-amount-buy .radio #feminino {
+    margin-left: 4rem;
+}
+
+.div-buy .div-info-buy .btn-buy {
+    font-size: 2rem;
+    width: 70%;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    margin-left: 10rem;
+    background-color: rgb(36, 225, 3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem;
+    justify-content: center;
+    border: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    animation: botaoPulsando 1.2s infinite alternate ease-in-out;
+    border-radius: 5px;
+}
+
+@keyframes botaoPulsando {
+    0% {
+        scale: 1;
+        opacity: 0.7;
+    }
+
+    100% {
+        scale: 1.15;
+        opacity: 1;
+    }
+}
+
+
+/* ---modal--- */
+
+.div-buy .modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-x: hidden;
+}
+
+.div-buy .modal::before {
+    content: "";
+    height: 100%;
+    overflow-y: hidden;
+    width: 100%;
+    background: radial-gradient(circle, rgba(42, 42, 42, 0.49352240896358546) 0%, rgba(42, 42, 42, 0.5663515406162465) 22%, rgba(0, 0, 0, 0.9080882352941176) 97%);
+    position: absolute;
+    z-index: 0;
+}
+
+.div-buy .modal .container {
+    background-color: #c38916f7;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    padding: 0 3.5rem 2rem;
+}
+
+.div-buy .modal .container .close-modal {
+    font-size: 4rem;
+    position: absolute;
+    right: 2rem;
+    top: 0.8rem;
+}
+
+.div-buy .modal .container .questions {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.816);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.5rem;
+}
+
+.div-buy .modal .container .questions .address {
+    margin-top: 1.5rem;
+}
+
+.div-buy .modal .container .questions span {
+    font-size: 9px;
+    color: rgba(25, 25, 25, 0.841);
+    margin-top: 1rem;
+}
+
+.div-buy .modal .container .questions input {
+    padding: 1rem 5px;
+    width: 90%;
+    border-radius: 4px;
+    margin: .7rem 0;
+    border: 2px solid #000;
+}
+
+.div-buy .modal .container .questions #name {
+    margin-top: 1.5rem;
+}
+
+.div-buy .modal .container .questions select {
+    width: 65%;
+    padding: 0.8rem 3px;
+    border-radius: 4px;
+    margin: 1rem 0 0.7rem;
+    border: 2px solid #000;
+}
+
+.div-buy .modal .container .questions .btn-send {
+    width: 40%;
+    padding: 0.8rem 5px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    align-self: flex-end;
+    margin: 2.5rem 2rem 1rem;
+}
+
+.div-buy .modal .container .questions .btn-send a {
+    color: #000;
+}
+
+.div-buy .modal.selecionado {
+    display: flex;
+    animation: abrirModal 0.5s alternate ease-in-out;
+}
+
+@keyframes abrirModal {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ---faq--- */
+
+.div-faq {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47, 47, 47);
+}
+
+.div-faq .capition-faq {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.div-faq .list-quest {
+    width: 50%;
+}
+
+.div-faq .list-quest li {
+    margin: 1rem;
+    position: relative;
+}
+
+.div-faq .list-quest li .quest {
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgb(92, 92, 92);
+    padding: 1.2rem 2.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.div-faq .list-quest li .see-more {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin-left: 2rem;
+    position: absolute;
+    right: 2.5rem;
+    top: 3px;
+    transition: 0.4s ease-in-out;
+}
+
+.div-faq .list-quest li .see-more.ativo {
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.div-faq .list-quest li .response {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.7rem;
+    background-color: rgb(108, 108, 108);
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+    animation: abrirResponse 0.4s ease;
+}
+
+@keyframes abrirResponse {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.div-faq .list-quest li .response.selecionada {
+    display: block;
+}
+
+/* ---footer--- */
+
+.div-footer {
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+}
+
+.div-footer .text-footer .capition-footer {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: rgb(223, 220, 220);
+}
+
+.div-footer .div-contact .list-contact {
+    display: flex;
+}
+
+.div-footer .div-contact .list-contact .links-contact {
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.div-footer .div-contact .list-contact .links-contact .link-social {
+    color: rgb(183, 181, 181);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.div-footer .div-contact .list-contact .links-contact .link-social .fa-whatsapp {
+    color: rgb(12, 204, 12);
+}
+
+.div-footer .div-contact .list-contact .links-contact .link-social .fa-envelope {
+    color: #bd8515;
+}
+
+.div-footer .div-contact .list-contact .links-contact .link-social .fa-instagram {
+    color: rgb(255, 0, 157);
+}
+
+.div-footer .div-contact .list-contact .links-contact .link-social:hover {
+    opacity: 0.65;
+}
