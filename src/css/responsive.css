@@ -120,10 +120,6 @@
         padding: 7rem 3rem 5rem;
     }
 
-    .div-about .div-about-with-link {
-        padding: 4rem 2rem 15rem;
-    }
-
     .div-about .div-about-imgs .container .list-itens {
         width: 50rem;
     }
@@ -180,9 +176,11 @@
     .div-buy .div-info-buy .div-amount-buy .radio #feminino {
         margin-left: 2rem;
     }
+
     .div-footer {
         padding: 4rem;
     }
+
     .div-footer .text-footer .capition-footer {
         font-size: 3rem;
     }
@@ -193,142 +191,110 @@
     }
 }
 
-@media (max-width:426px) {
-
-    body {
-        min-width: min-content;
-        zoom: 0.5;
+@media (max-width:430px) {
+    .div-home .div-img-home {
+        width: 60%;
     }
 
-    .header .nav label .menu {
-        width: 10rem;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .div-home .div-text-home {
+        padding: 30px;
     }
 
-    .header .nav label .menu .hamburguer::before {
-        top: -1.5rem;
+    .div-home .div-text-home .capition-description {
+        font-size: 3rem;
     }
 
-    .header .nav label .menu .hamburguer::after {
-        bottom: -1.5rem;
-    }
-
-    .header .nav label .menu .hamburguer {
-        width: 4rem;
-    }
-
-    .header .div-logo .logo {
-        width: 6rem;
-    }
-
-    .div-home .div-text-home .capition-description,
-    .div-about .div-about-with-link .div-about-texts .capition-about,
-    .div-about .div-about-imgs .capition-composition,
-    .div-footer .text-footer .capition-footer,
-    .div-faq .capition-faq,
-    .div-buy .div-info-buy .title {
-        font-size: 5rem;
-    }
-
-    .div-home .div-text-home .text-description,
-    .div-about .div-about-with-link .div-about-texts .text-about,
-    .header .nav .list-nav .link-nav a {
-
-        font-size: 2.8rem;
-        line-height: 4.1rem;
-    }
-
-    .div-about .div-about-imgs .container .list-itens .iten .info {
-        font-size: 3rem
-    }
-
-    .div-about .div-about-with-link .link-see-more {
-        font-size: 2.5rem;
-        bottom: 5rem;
-    }
-
-    .div-buy .div-info-buy table {
-        font-size: 2rem;
-        width: 90%;
-    }
-
-    .div-buy .div-info-buy .div-amount-buy .amount {
+    .div-home .div-text-home .text-description {
+        width: 100%;
         margin-left: 0;
     }
-
-    .div-buy .div-info-buy .div-amount-buy select {
-        font-size: 2rem;
-        margin-left: 1.5rem;
-        width: 30%;
+    .div-about .div-about-texts {
+        padding: 25px 0 40px;
     }
-
-    .div-buy .div-info-buy .div-amount-buy .radio label {
-        font-size: 2rem;
+    
+    .div-about .div-about-imgs {
+        padding:3.5rem 1rem 2.5rem;
     }
-
-    .div-buy .div-info-buy .btn-buy {
+    .div-about .div-about-imgs .container .list-itens {
+        width: 30rem;
+        padding: 16rem 0;
+    }
+    .div-about .div-about-imgs .btn {
         font-size: 2.5rem;
+    }
+    .div-about .div-about-imgs .container .list-itens .iten .img-iten {
+        height: 18rem;
+    }
+    .div-about .div-about-imgs .container .list-itens .iten .info {
+        font-size: 1.8rem;
+    }
+    .div-faq{
+        padding: 40px 0 50px;
+    }
+    .div-faq .capition-faq{
+        font-size: 28px;
+    }
+    .div-faq .list-quest {
+        width: 85%;
+    }
+    .div-faq .list-quest li .see-more {
+        top: 0;
+        right: 1rem;
+    }
+    .div-buy {
+        padding: 0 0 7rem;
+    }
+    .div-buy .div-info-buy {
+        margin:0;
+        padding-left: 2rem;
+    }
+    .div-buy .imgs-buy {
         width: 90%;
-        margin-left: 3rem;
+        padding: 13rem 0;
+        justify-content: space-between;
     }
 
-    .div-buy .modal .container {
+    .div-buy .imgs-buy .btn {
+        width: 2rem;
+    }
+    .div-buy .div-info-buy .title {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    .div-buy .div-info-buy .div-amount-buy {
+        flex-wrap: wrap;
+        gap: 40px 0;
+    }
+    .div-buy .div-info-buy .div-amount-buy select {
         width: 50%;
     }
-
-    .div-buy .modal .container .questions {
-        font-size: 2.5rem;
-        margin-top: 3rem;
+    
+.div-buy .div-info-buy .btn-buy {
+    margin: 50px auto;
+}
+    .div-footer{
+        padding: 30px 20px;
     }
-
-    .div-buy .modal .container .questions input,
-    .div-buy .modal .container .questions select {
-        padding: 1.3rem 1rem;
-        font-size: 1.8rem;
-        border-radius: 7px;
-    }
-
-    .div-buy .modal .container .questions .btn-send {
-        font-size: 2rem;
-        padding: 1.5rem 0;
-        width: 35%;
-        border-radius: 7px;
-        border: 1.5px solid black;
-    }
-
-    .div-buy .modal .container .questions span {
-        font-size: 1.3rem;
-    }
-
-    .div-faq .list-quest {
-        width: 80%;
-    }
-
-    .div-faq .list-quest li .quest {
-        font-size: 2.2rem;
-    }
-
-    .div-footer .div-contact .list-contact .links-contact {
-        font-size: 2rem;
+    .div-footer .div-contact .list-contact{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
 }
-
-@media (max-width: 376px) {
-    .div-faq .list-quest li .quest {
-        font-size: 1.8rem;
-    }
-    .div-footer .div-contact .list-contact .links-contact {
+@media (max-width:320px) {
+    .div-buy .div-info-buy .div-amount-buy .radio,
+    .div-buy .div-info-buy .btn-buy {
         font-size: 1.5rem;
     }
-}
-
-@media (max-width: 320px) {
-    .div-faq .list-quest li .quest {
-        font-size: 1.6rem;
+    .div-buy .div-info-buy .title,
+    .div-footer .text-footer .capition-footer {
+        font-size: 2.3rem;
     }
-
+    .div-about .div-about-imgs .container .list-itens {
+        width: 25rem;
+    }
+    .div-about .div-about-imgs .btn {
+        font-size: 2rem;
+    }
 }
